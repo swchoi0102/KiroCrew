@@ -10262,6 +10262,19 @@
       "usage": "Utilisation",
       "use_filter_to_narrow": "— utilisez le filtre pour affiner"
     },
+    "libraryPage": {
+      "pin": "Épingler",
+      "pin_to_sidebar": "Épingler {{name}} à la barre latérale",
+      "tile_actions": "Actions pour {{name}}",
+      "tile_details": "Détails",
+      "tile_disabled": "Désactivée",
+      "tile_more_actions": "Plus d'actions pour {{name}}",
+      "tile_no_sidebar_page": "Aucune page de barre latérale",
+      "tile_pinned": "Dans la barre latérale",
+      "tile_unpinned": "Pas dans la barre latérale",
+      "unpin": "Désépingler",
+      "unpin_from_sidebar": "Désépingler {{name}} de la barre latérale"
+    },
     "logsPage": {
       "filter_logs": "Filtrer les journaux",
       "filter_logs_2": "Filtrer les journaux...",

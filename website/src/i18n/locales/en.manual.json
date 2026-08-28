@@ -3777,6 +3777,19 @@
         "retry": "Retry"
       }
     },
+    "libraryPage": {
+      "pin": "Pin",
+      "pin_to_sidebar": "Pin {{name}} to the sidebar",
+      "tile_actions": "Actions for {{name}}",
+      "tile_details": "Details",
+      "tile_disabled": "Disabled",
+      "tile_more_actions": "More actions for {{name}}",
+      "tile_no_sidebar_page": "No sidebar page",
+      "tile_pinned": "In sidebar",
+      "tile_unpinned": "Not in sidebar",
+      "unpin": "Unpin",
+      "unpin_from_sidebar": "Unpin {{name}} from the sidebar"
+    },
     "logsPage": {
       "latest_first": "Latest: first",
       "latest_last": "Latest: last",

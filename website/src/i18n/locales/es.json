@@ -10262,6 +10262,19 @@
       "usage": "Uso",
       "use_filter_to_narrow": "— usa el filtro para acotar"
     },
+    "libraryPage": {
+      "pin": "Fijar",
+      "pin_to_sidebar": "Fijar {{name}} en la barra lateral",
+      "tile_actions": "Acciones para {{name}}",
+      "tile_details": "Detalles",
+      "tile_disabled": "Desactivada",
+      "tile_more_actions": "Más acciones para {{name}}",
+      "tile_no_sidebar_page": "Sin página en la barra lateral",
+      "tile_pinned": "En la barra lateral",
+      "tile_unpinned": "No está en la barra lateral",
+      "unpin": "Dejar de fijar",
+      "unpin_from_sidebar": "Dejar de fijar {{name}} en la barra lateral"
+    },
     "logsPage": {
       "filter_logs": "Filtrar registros",
       "filter_logs_2": "Filtrar registros...",

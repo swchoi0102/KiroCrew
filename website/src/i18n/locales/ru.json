@@ -10415,6 +10415,19 @@
       "usage": "Использование",
       "use_filter_to_narrow": "— используйте фильтр для уточнения"
     },
+    "libraryPage": {
+      "pin": "Закрепить",
+      "pin_to_sidebar": "Закрепить {{name}} на боковой панели",
+      "tile_actions": "Действия для {{name}}",
+      "tile_details": "Подробности",
+      "tile_disabled": "Отключено",
+      "tile_more_actions": "Другие действия для {{name}}",
+      "tile_no_sidebar_page": "Нет страницы в боковой панели",
+      "tile_pinned": "В боковой панели",
+      "tile_unpinned": "Не в боковой панели",
+      "unpin": "Открепить",
+      "unpin_from_sidebar": "Открепить {{name}} от боковой панели"
+    },
     "logsPage": {
       "filter_logs": "Фильтр журналов",
       "filter_logs_2": "Фильтр журналов...",

@@ -10109,6 +10109,19 @@
       "usage": "उपयोग",
       "use_filter_to_narrow": "— फ़िल्टर से सीमित करें"
     },
+    "libraryPage": {
+      "pin": "पिन करें",
+      "pin_to_sidebar": "{{name}} को साइडबार में पिन करें",
+      "tile_actions": "{{name}} के लिए एक्शन",
+      "tile_details": "विवरण",
+      "tile_disabled": "अक्षम",
+      "tile_more_actions": "{{name}} के लिए और एक्शन",
+      "tile_no_sidebar_page": "कोई साइडबार पेज नहीं",
+      "tile_pinned": "साइडबार में",
+      "tile_unpinned": "साइडबार में नहीं",
+      "unpin": "अनपिन करें",
+      "unpin_from_sidebar": "{{name}} को साइडबार से अनपिन करें"
+    },
     "logsPage": {
       "filter_logs": "लॉग फ़िल्टर करें",
       "filter_logs_2": "लॉग फ़िल्टर करें...",

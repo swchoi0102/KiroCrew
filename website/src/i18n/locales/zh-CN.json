@@ -9956,6 +9956,19 @@
       "usage": "使用量",
       "use_filter_to_narrow": "— 使用筛选缩小范围"
     },
+    "libraryPage": {
+      "pin": "置顶",
+      "pin_to_sidebar": "将 {{name}} 置顶到侧边栏",
+      "tile_actions": "{{name}} 的操作",
+      "tile_details": "详情",
+      "tile_disabled": "已禁用",
+      "tile_more_actions": "{{name}} 的更多操作",
+      "tile_no_sidebar_page": "无侧边栏页面",
+      "tile_pinned": "已在侧边栏",
+      "tile_unpinned": "不在侧边栏",
+      "unpin": "取消置顶",
+      "unpin_from_sidebar": "取消 {{name}} 在侧边栏的置顶"
+    },
     "logsPage": {
       "filter_logs": "筛选日志",
       "filter_logs_2": "筛选日志…",

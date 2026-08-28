@@ -9956,6 +9956,19 @@
       "usage": "사용량",
       "use_filter_to_narrow": "— 필터로 좁히세요"
     },
+    "libraryPage": {
+      "pin": "고정",
+      "pin_to_sidebar": "{{name}}을(를) 사이드바에 고정",
+      "tile_actions": "{{name}}의 작업",
+      "tile_details": "세부 정보",
+      "tile_disabled": "비활성화됨",
+      "tile_more_actions": "{{name}}의 추가 작업",
+      "tile_no_sidebar_page": "사이드바 페이지 없음",
+      "tile_pinned": "사이드바에 있음",
+      "tile_unpinned": "사이드바에 없음",
+      "unpin": "고정 해제",
+      "unpin_from_sidebar": "사이드바에서 {{name}} 고정 해제"
+    },
     "logsPage": {
       "filter_logs": "로그 필터",
       "filter_logs_2": "로그 필터…",

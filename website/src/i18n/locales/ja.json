@@ -9956,6 +9956,19 @@
       "usage": "使用状況",
       "use_filter_to_narrow": "— フィルタで絞り込み"
     },
+    "libraryPage": {
+      "pin": "ピン留め",
+      "pin_to_sidebar": "{{name}} をサイドバーにピン留め",
+      "tile_actions": "{{name}} の操作",
+      "tile_details": "詳細",
+      "tile_disabled": "無効",
+      "tile_more_actions": "{{name}} のその他の操作",
+      "tile_no_sidebar_page": "サイドバーページなし",
+      "tile_pinned": "サイドバーに表示中",
+      "tile_unpinned": "サイドバー未表示",
+      "unpin": "ピン留め解除",
+      "unpin_from_sidebar": "{{name}} のサイドバーへのピン留めを解除"
+    },
     "logsPage": {
       "filter_logs": "ログをフィルタ",
       "filter_logs_2": "ログをフィルタ…",
