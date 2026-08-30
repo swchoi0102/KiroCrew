@@ -154,6 +154,20 @@ export default function MembersPage() {
     if (activeSlot && activeSlotUnread) dispatch(markSlotRead(activeSlot))
   }, [activeSlot, activeSlotUnread, dispatch])
 
+  // Per-row unread marker: the rail badge says "1", this says WHICH member.
+  // Keyed the same way isRunning resolves a member's slot (thread-endpoint
+  // cache first, roster binding as the cold-start fallback), and read straight
+  // from unreadSlots so the drain effect above clears the dot the moment the
+  // thread is opened.
+  const unreadSlots = useAppSelector((s) => s.dashboard.unreadSlots)
+  const isUnread = useCallback(
+    (m: MemberRosterRow) => {
+      const key = slots[m.name] || m.slot_key
+      return !!key && unreadSlots.includes(key)
+    },
+    [slots, unreadSlots],
+  )
+
   const openMember = useCallback(
     (m: MemberRosterRow) => {
       setActiveName(m.name)
@@ -288,9 +302,24 @@ export default function MembersPage() {
                   <span className="block text-[13px] font-medium truncate">{m.name}</span>
                   {/* Last-message preview, like a session row — presence
                       already rides the avatar dot, so a textual Idle/Working
-                      label said nothing the dot did not. */}
-                  <span className="block text-[11px] text-muted truncate">
-                    {m.last_message || '\u00a0'}
+                      label said nothing the dot did not. The unread dot leads
+                      this line (ChatSidebar's session-row convention: the dot
+                      rides `last_message`), accent-filled and w-2 h-2 like the
+                      sidebar's, with a real accessible name — the preview text
+                      says what was said, not that it is unread. A flex row,
+                      because a w-2 h-2 dot only keeps its box as a flex item. */}
+                  <span className="flex items-center gap-1.5 min-w-0 text-[11px] text-muted">
+                    {isUnread(m) && (
+                      <span
+                        className="w-2 h-2 rounded-full shrink-0"
+                        style={{ background: 'var(--accent)' }}
+                        role="img"
+                        aria-label={t('pages.membersPage.unread_message')}
+                        title={t('pages.membersPage.unread_message')}
+                        data-testid="member-unread-dot"
+                      />
+                    )}
+                    <span className="truncate">{m.last_message || '\u00a0'}</span>
                   </span>
                 </span>
               </button>
