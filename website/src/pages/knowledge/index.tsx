@@ -683,10 +683,10 @@ export default function KnowledgePage({ embedded = false }: { embedded?: boolean
       {/* Stats bar */}
       {stats && (
         <div className="border-t border-border px-4 md:px-6 py-2 flex gap-x-3 gap-y-0.5 sm:gap-4 flex-wrap text-[11px] sm:text-[12px] text-muted shrink-0">
-          <span className="whitespace-nowrap">{stats.items} {i18nT('pages.knowledge.index.items_2')}</span>
-          <span className="whitespace-nowrap">{stats.entities} {i18nT('pages.knowledge.index.entities')}</span>
-          <span className="whitespace-nowrap">{stats.relations} {i18nT('pages.knowledge.index.relations')}</span>
-          <span className="whitespace-nowrap">{stats.sources} {i18nT('pages.knowledge.index.sources')}</span>
+          <span className="whitespace-nowrap">{i18nT('pages.knowledge.index.stats_items', { count: stats.items })}</span>
+          <span className="whitespace-nowrap">{i18nT('pages.knowledge.index.stats_entities', { count: stats.entities })}</span>
+          <span className="whitespace-nowrap">{i18nT('pages.knowledge.index.stats_relations', { count: stats.relations })}</span>
+          <span className="whitespace-nowrap">{i18nT('pages.knowledge.index.stats_sources', { count: stats.sources })}</span>
           {stats.embeddings?.enabled ? (
             <span className={`whitespace-nowrap ${stats.embeddings.available ? 'text-ok' : 'text-warn'}`} title={stats.embeddings.available ? `${stats.embeddings.model} — ${stats.embeddings.embedded_items} embedded` : i18nT('pages.knowledge.index.embedding_model_loading', { name: stats.embeddings.model })}>
               ● {stats.embeddings.available ? i18nT('pages.knowledge.index.embeddings_count', { value: stats.embeddings.embedded_items }) : i18nT('pages.knowledge.index.embeddings_loading')}
